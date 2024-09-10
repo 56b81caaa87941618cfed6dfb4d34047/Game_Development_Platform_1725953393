@@ -2,8 +2,8 @@
   <div>
     <section class="leading-relaxed max-w-screen-xl mt-12 mx-auto px-4 md:px-8 bg-white">
       <div class="space-y-3 text-center">
-        <h1 class="text-4xl text-gray-800 font-semibold pt-10">FAQ_TITLE_PLACEHOLDER_TEXT</h1>
-        <p class="text-gray-600 max-w-lg mx-auto text-lg">FAQ_SUBTITLE_PLACEHOLDER_TEXT</p>
+        <h1 class="text-4xl text-gray-800 font-semibold pt-10">Frequently Asked Questions</h1>
+        <p class="text-gray-600 max-w-lg mx-auto text-lg">Everything you need to know about our game work platform</p>
       </div>
       <div class="mt-14 max-w-2xl mx-auto">
         <div v-for="(item, index) in faqs" :key="index" class="space-y-5 mt-5 overflow-hidden border-b border-gray-200 hover:bg-gray-50 cursor-pointer" @click="toggleFaq(index)">
@@ -36,11 +36,11 @@ export default {
     return {
       selectedFaq: null,
       faqs: [
-        { q: "FAQ_PLACEHOLDER_QUESTION_TEXT_1", a: "FAQ_PLACEHOLDER_ANSWER_TEXT_1" },
-        { q: "FAQ_PLACEHOLDER_QUESTION_TEXT_2", a: "FAQ_PLACEHOLDER_ANSWER_TEXT_2" },
-        { q: "FAQ_PLACEHOLDER_QUESTION_TEXT_3", a: "FAQ_PLACEHOLDER_ANSWER_TEXT_3" },
-        { q: "FAQ_PLACEHOLDER_QUESTION_TEXT_4", a: "FAQ_PLACEHOLDER_ANSWER_TEXT_4" },
-        { q: "FAQ_PLACEHOLDER_QUESTION_TEXT_5", a: "FAQ_PLACEHOLDER_ANSWER_TEXT_5" }
+        { q: "What kind of game work can I find on this app?", a: "Our app connects you with a wide range of game-related job opportunities, including game design, programming, art, animation, sound design, quality assurance, and more." },
+        { q: "How do I create a profile and start finding work?", a: "Simply sign up, create a detailed profile showcasing your skills and experience, and start browsing available projects. You can also set up job alerts for specific roles." },
+        { q: "Is this platform for freelancers or full-time positions?", a: "Our app caters to both freelancers and those seeking full-time positions in the gaming industry. You can filter job listings based on your preferred employment type." },
+        { q: "How does payment work for completed projects?", a: "We offer secure payment processing through our platform. Once a project is completed and approved, payment is released to your account within 3-5 business days." },
+        { q: "Can I collaborate with other professionals on this platform?", a: "Absolutely! Our app includes features for team formation and collaboration, allowing you to connect with other professionals and work together on exciting game projects." }
       ]
     }
   },
